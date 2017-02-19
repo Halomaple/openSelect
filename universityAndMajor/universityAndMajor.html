@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>中国大学专业选择</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+		<script type="text/javascript" src="./majorList.js"></script>
+		<script type="text/javascript" src="./majorSelect.js"></script>
+
+		<script type="text/javascript" src="./chinaUniversityList.js"></script>
+		<script type="text/javascript" src="./chinaUniversitySelect.js"></script>
+	</head>
+	<body>
+
+		<input value='点击选择学校' id='selectSchool' type='text'>
+		<div id="choose-box-wrapper-university">
+			<div class="choose-box">
+				<div class="choose-box-title">
+					<span>选择学校</span>
+				</div>
+				<p style="font-size:12px;text-indent:1em;"><span>搜索：</span><input id="searchSchool" type="text" value="搜索学校"/></p>
+				<div id="choose-a-province">
+				</div>
+				<div id="choose-a-school">
+				</div>
+				<div class="choose-box-bottom">
+					<input type="botton" class="close" value="关闭" />
+				</div>
+			</div>
+		</div>
+
+		<input value='点击选择专业' id='selectMajor' type='text'>
+		<div id="choose-box-wrapper-major">
+			<div class="choose-box">
+				<div class="choose-box-title">
+					<span>选择专业</span>
+				</div>
+				<p>
+					<span>搜索：</span>
+					<input id="searchMajor" type="text" value="搜索专业"/>
+				</p>
+				<div id="choose-a-majorClass">
+				</div>
+				<div id="choose-a-major">
+				</div>
+				<div class="choose-box-bottom">
+					<input type="botton" class="close" value="关闭" />
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+			#choose-box-wrapper-major, #choose-box-wrapper-university {
+				width: 650px;
+				max-width: 100%;
+				display: none;
+				border: 1px solid #eee;
+				font-family: inherit;
+			}
+			.choose-box {
+				width: 100%;
+				background-color: white;
+			}
+			.choose-box-title {
+				background: #3777BC;
+				color: white;
+				padding: 4px 10px 5px;
+				font-size: 14px;
+				font-weight: 700;
+				margin: 0;
+			}
+			#choose-a-province, #choose-a-school, #choose-a-majorClass, #choose-a-major {
+				margin: 5px 8px 10px 8px;
+				border: 1px solid #C3C3C3;
+			}
+			#choose-a-province a, #choose-a-majorClass a {
+				display: inline-block;
+				height: 18px;
+				line-height: 18px;
+				color: #005EAC;
+				text-decoration: none;
+				font-size: 9pt;
+				margin: 2px 5px;
+				padding: 1px;
+				text-align: center;
+			}
+			#choose-a-province a:hover, #choose-a-majorClass a:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			#choose-a-province .choosen, #choose-a-majorClass .choosen {
+				background-color: #005EAC;
+				color: white;
+			}
+			#choose-a-school, #choose-a-major {
+				overflow-x: hidden;
+				overflow-y: auto;
+				height: 200px;
+			}
+			#choose-a-school a, #choose-a-major a {
+				height: 18px;
+				line-height: 18px;
+				color: #005EAC;
+				text-decoration: none;
+				font-size: 9pt;
+				float: left;
+				width: 170px;
+				margin: 4px 0px 4px 12px;
+				padding-left: 10px;
+			}
+			#choose-a-school a:hover, #choose-a-major a:hover {
+				background-color: #005EAC;
+				color: white;
+				cursor: pointer;
+			}
+			.choose-box-bottom {
+				background: #F0F5F8;
+				text-align: right;
+				border-top: 1px solid #CCC;
+			}
+			.choose-box-bottom input {
+				vertical-align: middle;
+				text-align: center;
+				background-color: #005EAC;
+				color: white;
+				border-top: 1px solid #B8D4E8;
+				border-left: 1px solid #B8D4E8;
+				border-right: 1px solid #114680;
+				border-bottom: 1px solid #114680;
+				cursor: pointer;
+				width: 60px;
+				height: 25px;
+				margin: 6px;
+			}
+		</style>
+	</body>
+</html>
