@@ -1,18 +1,16 @@
-#choose-box-wrapper {
-	width: 652px;
-	background-color: #000;
-	_filter: alpha(opacity=50);
-	_background-color: rgba(0, 0, 0，1);
-	padding: 2px;
-	border-radius: 5px;
-	display: none;
-}
-#choose-box {
-	border: 1px solid #005EAC;
+#choose-box-wrapper-university {
 	width: 650px;
+	max-width: 100%;
+	display: none;
+	border: 1px solid #eee;
+	font-family: inherit;
+}
+.choose-box {
+	border: 1px solid #005EAC;
+	width: 100%;
 	background-color: white;
 }
-#choose-box-title {
+.choose-box-title {
 	background: #3777BC;
 	color: white;
 	padding: 4px 10px 5px;
@@ -63,21 +61,19 @@
 	width: 170px;
 	margin: 4px 0px 4px 12px;
 	padding-left: 10px;
-	background: url(http://ww2.sinaimg.cn/large/005ItG0Rjw1er8sxnnnlpg3004004019.gif) no-repeat 0 9px;
 }
 #choose-a-school a:hover {
 	background-color: #005EAC;
 	color: white;
 	cursor: pointer;
 }
-#choose-box-bottom {
+.choose-box-bottom {
 	background: #F0F5F8;
-	padding: 8px;
 	text-align: right;
 	border-top: 1px solid #CCC;
 	height: 40px;
 }
-#choose-box-bottom input {
+.choose-box-bottom input {
 	vertical-align: middle;
 	text-align: center;
 	background-color: #005EAC;
@@ -89,6 +85,5 @@
 	cursor: pointer;
 	width: 60px;
 	height: 25px;
-	margin-top: 6px;
-	margin-right: 6px;
+	margin: 6px;
 }
